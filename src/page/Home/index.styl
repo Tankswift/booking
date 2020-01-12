@@ -1,0 +1,128 @@
+#Home{
+    .Grade{
+        z-index :99
+        position: fixed
+        top:0
+        width 100vw
+        height 10.1vw
+        background rgba(255,255,255,1);
+        box-sizing:border-box;
+        padding: 2.8vw 0 3.3vw 7.6vw
+        .GradeItem{
+            display inline-block
+            margin-right:16.1vw
+            position: relative
+            
+            .txt{
+                font-size: 4vw
+                font-family:Microsoft YaHei;
+                font-weight:400;
+                color:rgba(153,153,153,1);;
+                z-index: 1
+                position relative
+            }
+            .txtActive{
+                font-weight: bold
+                color:rgba(51,51,51,1)
+            }
+            .border{
+                width: 100%
+                height 1.6vw
+                background:rgba(255,198,56,1); 
+                position absolute
+                top:3.25vw
+                z-index: -1
+                display none
+            }
+            .borderActive{
+                display block    
+            }    
+        }  
+    }
+    .Subject{
+        width 100vw
+        height 13.3vw
+        background: rgba(255,255,255,1)     
+        padding: 2.8vw 0 2.8vw 4.8vw
+        box-sizing: border-box
+        display: flex
+        overflow-x: scroll
+        .SubjectItem{
+            display inline-block 
+            width:13.3vw
+            height:7.7vw
+            text-align: center
+            line-height: 7.7vw
+            background:rgba(244,244,244,1)
+            margin-right: 3.5vw
+            border-radius:3.9vw;
+            font-size 3.2vw;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(76,76,76,1);
+        }
+        .SubjectActive{
+            background:linear-gradient(0deg,rgba(254,179,54,1) 0%,rgba(255,198,56,1) 100%);
+            color:rgba(255,255,255,1);
+        }
+    }
+    .Teacher{
+        width 100vw
+        height 22.4vw
+        background:rgba(255,255,255,1);
+        margin-top:1px;
+        padding 3.3vw 0 3.3vw 5.5vw
+        box-sizing: border-box
+        display: flex
+        overflow-x: scroll
+        .item-teacher{
+             
+                margin-right 4.7vw
+               .item-icon{
+                   width 12vw
+                   height 12vw
+                   background:rgba(204,204,204,.5)
+                   background-size:cover
+                   background-repeat: no-repeat 
+                   border-radius:50%
+                   box-sizing: border-box
+               } 
+               .item-name{
+                   text-align: center
+                   font-size:2.7vw
+                   margin-top: 1.1vw
+                   font-family:Microsoft YaHei
+                   font-weight:400;
+                   color:rgba(153,153,153,1)
+                }      
+        }
+        .TeacherActive{
+                    .item-icon{
+                        border:3px solid rgba(250,190,0,1);
+        
+                    }
+                    .item-name{
+                        color:rgba(250,190,0,1);
+                    }    
+                }    
+    }
+    .Footer{
+        width: 100vw
+        height: 12vw
+        background:linear-gradient(0deg,rgba(254,179,54,1) 0%,rgba(255,198,56,1) 100%);
+        position: fixed;
+        left 0
+        right 0
+        bottom 0
+        font-size:4vw;
+        font-family:FZLanTingHeiS-DB-GB;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+        line-height:43px;
+        text-shadow:0px 3px 16px rgba(239,161,30,0.56);
+        text-align: center
+        line-height: 12vw    
+    }
+    
+    
+}
